@@ -15,8 +15,8 @@ uint32_t Pre_time = 0;
 int countdown = 0;
 int OPEN = 5;
 
-SoftwareSerial9 mySerial_L(12, 11);
-SoftwareSerial9 mySerial_R(10, 9);
+SoftwareSerial9 mySerial_L(12, 11);  //Wheels left TX = pin 11 , RX = pin 12
+SoftwareSerial9 mySerial_R(10, 9);  //Wheels right TX = pin 9 , RX = pin 10
 
 ///////////////////////////////////SETUP///////////////////////////////////////
 void setup() {
