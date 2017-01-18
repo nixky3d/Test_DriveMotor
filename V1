@@ -76,7 +76,7 @@ void loop()
     mySerial_L.write9(85 + i);
     delayMicroseconds(300);
   } 
-  
+ 
 ///////////////////////////////////////RIGHT///////////////////////////////////
   if (Right == ' ') {
     sp_L = 0;
@@ -101,8 +101,8 @@ void loop()
     mySerial_R.write9(85 + i);
     delayMicroseconds(300);
   }
-////////////////////////////////////MONITER//////////////////////////////////
   
+////////////////////////////////////MONITER//////////////////////////////////
   Serial.print("speed L = ");
   Serial.println(sp_L);
   Serial.print(" low byte ");
@@ -122,6 +122,7 @@ void loop()
   Left = Serial.read();
   Right = Serial.read();
 }
+
 //////////////////////////////I2C RECEIVE/////////////////////////////////////
 void receiveEvent(int howMany)
 {
